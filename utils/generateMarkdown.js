@@ -31,13 +31,15 @@ ${data.installation}
 ${data.usage}
 
 ## Contributions
-${data.contributions}
+${data.collab}
+${data.thirdParty}
 
 ## License
 ${data.license}
 
 ## Tests
 ${data.tests}
+${data.testHowTo}
 
 ## Questions
 For anymore questions contact me at ${data.gitProfile}
