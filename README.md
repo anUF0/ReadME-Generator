@@ -20,7 +20,7 @@ This project was made with Inquirer
 
 ## Tests
 ![Demo](./assets/Demo.mp4)
-
+Open Raw and Download
 
 ## Questions
 For anymore questions contact me at http://github.com/anUF0
