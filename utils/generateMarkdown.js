@@ -1,16 +1,19 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
-function renderLicenseBadge(license) {}
+function renderLicenseBadge(license) {
+  const licenseType = license;
+  let yourLicense = ''
+  if(licenseType === 'MIT') {
+    yourLicense = `![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)`
+  } else if (licenseType === 'GPLv3') {
+    yourLicense = `![GPLv3 license](https://img.shields.io/badge/License-GPLv3-blue.svg)`
+  } else if (licenseType === 'GPL') {
+    yourLicense = `![GPL license](https://img.shields.io/badge/License-GPL-blue.svg)`
+  } else {
+    license.license = "N/A"
+  }
+  return yourLicense;
+};
 
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
-function renderLicenseLink(license) {}
-
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
-function renderLicenseSection(license) {}
-
-// TODO: Create a function to generate markdown for README
+//F unction to generate markdown for README
 function generateMarkdown(answers) {
   return `# ${answers.title}
 ## Description
@@ -31,18 +34,17 @@ ${answers.installation}
 ${answers.usage}
 
 ## Contributions
-${answers.collab}
-${answers.thirdParty}
+This project was made with assistance of ${answers.collab} and ${answers.thirdParty}
 
 ## License
-${answers.license}
+${renderLicenseBadge(answers.license)}
 
 ## Tests
 ${answers.tests}
 ${answers.testHowTo}
 
 ## Questions
-For anymore questions contact me at ${answers.gitProfile}
+For anymore questions contact me at ![${answers.gitProfile}]
 `;
 }
 

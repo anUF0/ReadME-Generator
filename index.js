@@ -20,39 +20,40 @@ const questions = ['What is Your Project Called?',
 // Promts user and writes README
 function writeToFile() {
     inquirer.prompt([
-    {
+   {
+   type: 'input',
+   name:'title',
+   message: questions[0],
+   },
+   {
+   type: 'input',
+   name:'description',
+   message: questions[1],
+   },
+   {
     type: 'input',
-    name:'title',
-    message: questions[0],
+    name:'installation',
+    message: questions[2],
     },
     {
-    type: 'input',
-    name:'description',
-    message: questions[1],
-    },
+   type: 'input',
+   name:'usage',
+   message: questions[3],
+   },
+   {
+   type: 'input',
+   name:'thirdParty',
+   message: questions[4],
+   },
+   {
+   type: 'input',
+   name:'collab',
+   message: questions[5],
+   },
     {
-     type: 'input',
-     name:'installation',
-     message: questions[2],
-     },
-     {
-    type: 'input',
-    name:'usage',
-    message: questions[3],
-    },
-    {
-    type: 'input',
-    name:'thirdParty',
-    message: questions[4],
-    },
-    {
-    type: 'input',
-    name:'collab',
-    message: questions[5],
-    },
-    {
-    type: 'input',
+    type: 'list',
     name:'license',
+    choices: ["MIT","GPLv3","GPL","N/A"],
     message: questions[6],
     },
     {
@@ -72,7 +73,7 @@ function writeToFile() {
     }
 ])
     .then((answers) => {
-        console.log(answers);
+        console.log(answers.license);
 
         const readMEContent = generateMarkdown(answers);
 
@@ -82,7 +83,6 @@ function writeToFile() {
     });
 }
 
-// TODO: Create a function to initialize app
 function init() {
     writeToFile();
 }
