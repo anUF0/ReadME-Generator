@@ -19,8 +19,8 @@ Users are to the application in a terminal. There they will be prompted with a s
 This project was made with Inquirer
 
 ## Tests
-![./assets/Demo.mp4]
+![Demo](./assets/Demo.mp4)
 
 
 ## Questions
-For anymore questions contact me at ![github.com/anUF0]
+For anymore questions contact me at http://github.com/anUF0

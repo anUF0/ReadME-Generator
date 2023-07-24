@@ -14,7 +14,7 @@ const questions = ['What is Your Project Called?',
 'What License Did you use?',
 'Please Provide Test(s) for Your Project',
 'Give Brief Explanation of How to Run said Tests',
-'Please Provide a Link to your Github profile'
+'Please Provide your Github username'
 ];
 
 // Promts user and writes README

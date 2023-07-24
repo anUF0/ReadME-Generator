@@ -47,7 +47,7 @@ ${answers.tests}
 ${answers.testHowTo}
 
 ## Questions
-For anymore questions contact me at ![${answers.gitProfile}]
+For anymore questions contact me at https://github.com/${answers.gitProfile}
 `;
 }
 
