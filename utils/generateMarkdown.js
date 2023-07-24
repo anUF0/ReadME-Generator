@@ -15,6 +15,9 @@ function renderLicenseBadge(license) {
 
 //F unction to generate markdown for README
 function generateMarkdown(answers) {
+  if(undefined){
+    return ''
+  }
   return `# ${answers.title}
 ## Description
 ${answers.description}
@@ -30,7 +33,7 @@ ${answers.description}
 ## Installation
 ${answers.installation}
 
-##Usage
+## Usage
 ${answers.usage}
 
 ## Contributions
