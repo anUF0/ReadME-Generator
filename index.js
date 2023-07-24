@@ -53,7 +53,7 @@ function writeToFile() {
     {
     type: 'list',
     name:'license',
-    choices: ["MIT","GPLv3","GPL","N/A"],
+    choices: ['MIT','GPLv3','GPL','N/A'],
     message: questions[6],
     },
     {
@@ -73,8 +73,6 @@ function writeToFile() {
     }
 ])
     .then((answers) => {
-        console.log(answers.license);
-
         const readMEContent = generateMarkdown(answers);
 
         fs.writeFile('./Output/ReadMe.md', readMEContent, (err) =>

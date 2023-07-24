@@ -8,7 +8,7 @@ function renderLicenseBadge(license) {
   } else if (licenseType === 'GPL') {
     yourLicense = `![GPL license](https://img.shields.io/badge/License-GPL-blue.svg)`
   } else {
-    license.license = "N/A"
+    license.license = 'N/A'
   }
   return yourLicense;
 };
